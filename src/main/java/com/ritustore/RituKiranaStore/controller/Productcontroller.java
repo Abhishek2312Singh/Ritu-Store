@@ -3,15 +3,13 @@ package com.ritustore.RituKiranaStore.controller;
 import com.ritustore.RituKiranaStore.model.Product;
 import com.ritustore.RituKiranaStore.repository.Productrepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/product")
+    @CrossOrigin(origins = "http://localhost:5173")
 public class Productcontroller {
 
     @Autowired
